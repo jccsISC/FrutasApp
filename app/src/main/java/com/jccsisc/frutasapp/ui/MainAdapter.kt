@@ -9,8 +9,8 @@ import com.jccsisc.frutasapp.baseholder.BaseViewHolder
 import com.jccsisc.frutasapp.databinding.CardFrutasBinding
 import com.jccsisc.frutasapp.ui.model.Fruta
 class MainAdapter(
-    private val context: Context, private val frutasList: List<Fruta>,
-    private val itemClickListener: OnClickFrutaListener
+        private val context: Context, private var frutasList: List<Fruta>,
+        private val itemClickListener: OnClickFrutaListener
 ) : RecyclerView.Adapter<BaseViewHolder<*>>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder<*> {
@@ -33,7 +33,7 @@ class MainAdapter(
 
             Glide.with(context).load(item.image).centerCrop().into(binding.ivFruta)
             tvNameFruta.text = item.nombreFruta
-            tvPrecio.text = "$ ${item.precioFruta.toString()}   "
+            tvPrecio.text = "$ ${item.precioFruta.toString()} "
             itemView.setOnClickListener { itemClickListener.onItemClick(item, position) }
         }
     }

@@ -17,9 +17,9 @@
 
             <ImageView
                 android:id="@+id/ivAddFruta"
-                android:layout_width="@dimen/width_90"
-                android:layout_height="@dimen/width_90"
-                android:src="@mipmap/ic_launcher" />
+                android:layout_width="@dimen/width_200"
+                android:layout_height="@dimen/width_200"
+                android:src="@drawable/ic_camara" />
 
 
             <EditText
