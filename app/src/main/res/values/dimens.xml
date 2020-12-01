@@ -12,4 +12,5 @@
     <dimen name="height_50">50dp</dimen>
     <dimen name="height_300">300dp</dimen>
     <dimen name="margin_10">10dp</dimen>
+    <dimen name="height_60">60dp</dimen>
 </resources>

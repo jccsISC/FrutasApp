@@ -2,10 +2,11 @@
 <layout>
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.DetallesFragment"
+        tools:context=".ui.DetaallesActivity"
         android:orientation="vertical">
 
         <ImageView
@@ -13,17 +14,6 @@
             android:layout_width="match_parent"
             android:src="@mipmap/ic_launcher"
             android:layout_height="@dimen/height_300" />
-
-        <TextView
-            android:id="@+id/tvNameFruta"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_10"
-            android:gravity="center"
-            android:textColor="@color/design_default_color_primary"
-            android:textSize="@dimen/size_30"
-            android:textStyle="bold"
-            tools:text="Manzana" />
 
         <TextView
             android:layout_width="match_parent"
@@ -84,5 +74,7 @@
             android:gravity="center"
             android:textSize="@dimen/size_20"
             tools:text="37.5" />
+
     </LinearLayout>
+
 </layout>
