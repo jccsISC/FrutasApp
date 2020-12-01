@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".ui.AgregarFrutaFragment">
+
+            <ImageView
+                android:id="@+id/ivAddFruta"
+                android:layout_width="@dimen/width_90"
+                android:layout_height="@dimen/width_90"
+                android:src="@mipmap/ic_launcher" />
+
+            <EditText
+                android:id="@+id/tieName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Top_40"
+                android:hint="@string/hint_name"
+                android:inputType="textPersonName"
+                android:padding="@dimen/padding_10"
+                android:textSize="@dimen/size_20" />
+
+            <EditText
+                android:id="@+id/tiePeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Top_40"
+                android:hint="@string/hint_peso"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/padding_10"
+                android:textSize="@dimen/size_20" />
+
+            <EditText
+                android:id="@+id/tieColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Top_40"
+                android:hint="@string/hint_color"
+                android:inputType="text"
+                android:padding="@dimen/padding_10"
+                android:textSize="@dimen/size_20" />
+
+            <EditText
+                android:id="@+id/tiePrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Top_40"
+                android:hint="@string/hint_name"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/padding_10"
+                android:textSize="@dimen/size_20" />
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_50"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="@dimen/margin_top_30"
+                android:text="@string/Agregar" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

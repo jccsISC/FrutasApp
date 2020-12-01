@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.jccsisc.frutasapp.ui.MainFragment"
+        android:label="Lista de Frutas" >
+        <action
+            android:id="@+id/action_mainFragment_to_detallesFragment"
+            app:destination="@id/detallesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainFragment_to_agregarFrutaFragment"
+            app:destination="@id/agregarFrutaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detallesFragment"
+        android:name="com.jccsisc.frutasapp.ui.DetallesFragment"
+        android:label="Detalles Fruta" />
+    <fragment
+        android:id="@+id/agregarFrutaFragment"
+        android:name="com.jccsisc.frutasapp.ui.AgregarFrutaFragment"
+        android:label="Agrega una Fruta" />
+</navigation>

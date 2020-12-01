@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_8">
+
+        <ImageView
+            android:id="@+id/ivFruta"
+            android:layout_width="@dimen/width_90"
+            android:layout_height="@dimen/width_90"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/margin_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameFruta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="@dimen/size_30"
+                android:textStyle="bold"
+                tools:text="Manzana" />
+
+            <TextView
+                android:id="@+id/tvPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_20"
+                tools:text="$ 37.50" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
