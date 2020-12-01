@@ -5,9 +5,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.jccsisc.frutasapp.baseholder.BaseViewHolder
+import com.jccsisc.frutasapp.ui.baseholder.BaseViewHolder
 import com.jccsisc.frutasapp.databinding.CardFrutasBinding
-import com.jccsisc.frutasapp.ui.model.Fruta
+import com.jccsisc.frutasapp.model.Fruta
 class MainAdapter(
         private val context: Context, private var frutasList: List<Fruta>,
         private val itemClickListener: OnClickFrutaListener

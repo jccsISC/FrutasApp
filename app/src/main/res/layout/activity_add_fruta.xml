@@ -13,7 +13,7 @@
             android:layout_marginHorizontal="@dimen/margin_20"
             android:gravity="center"
             android:orientation="vertical"
-            tools:context=".ui.AddFrutaActivity">
+            tools:context=".ui.activities.AddFrutaActivity">
 
             <ImageView
                 android:id="@+id/ivAddFruta"

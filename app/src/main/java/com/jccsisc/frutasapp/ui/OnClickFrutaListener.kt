@@ -1,6 +1,6 @@
 package com.jccsisc.frutasapp.ui
 
-import com.jccsisc.frutasapp.ui.model.Fruta
+import com.jccsisc.frutasapp.model.Fruta
 
 interface OnClickFrutaListener {
 

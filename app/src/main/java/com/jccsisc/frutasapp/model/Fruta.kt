@@ -1,4 +1,4 @@
-package com.jccsisc.frutasapp.ui.model
+package com.jccsisc.frutasapp.model
 
 import android.os.Parcel
 import android.os.Parcelable

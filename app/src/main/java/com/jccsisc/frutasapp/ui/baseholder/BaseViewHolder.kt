@@ -1,4 +1,4 @@
-package com.jccsisc.frutasapp.baseholder
+package com.jccsisc.frutasapp.ui.baseholder
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

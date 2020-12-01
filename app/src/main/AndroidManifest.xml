@@ -11,9 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FrutasApp">
-        <activity android:name=".ui.AddFrutaActivity" android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".ui.DetaallesActivity" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.activities.AddFrutaActivity" android:parentActivityName=".ui.MainActivity"></activity>
+        <activity android:name=".ui.activities.DetaallesActivity" android:parentActivityName=".ui.MainActivity"/>
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

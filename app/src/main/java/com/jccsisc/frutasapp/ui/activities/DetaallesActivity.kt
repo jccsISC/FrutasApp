@@ -1,13 +1,11 @@
-package com.jccsisc.frutasapp.ui
+package com.jccsisc.frutasapp.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.bumptech.glide.Glide
-import com.jccsisc.frutasapp.R
 import com.jccsisc.frutasapp.databinding.ActivityDetaallesBinding
-import com.jccsisc.frutasapp.ui.model.Fruta
-import kotlinx.android.synthetic.main.card_frutas.*
+import com.jccsisc.frutasapp.model.Fruta
 
 class DetaallesActivity : AppCompatActivity() {
 
@@ -23,10 +21,11 @@ class DetaallesActivity : AppCompatActivity() {
         binding.apply {
 
             val bundle = intent.extras
-            fruta = bundle?.getParcelable<Fruta>("fruta")!!
+            fruta = bundle?.getParcelable("fruta")!!
             Log.d("NAME", "$fruta")
 
             supportActionBar?.title = fruta.nombreFruta
+
             Glide.with(applicationContext).load(fruta.image).centerCrop().into(imageFruta)
             tvColor.text = fruta.colorFruta
             tvPeso.text = fruta.pesoFruta
